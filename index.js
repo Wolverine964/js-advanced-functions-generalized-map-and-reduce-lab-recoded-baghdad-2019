@@ -10,5 +10,4 @@ function reduce(arr1, action, sp=0){
     for (; i < arr1.length; i++){
         ans = action(ans, arr1[i])
     }
-    return ans
-}
+    return ans}
