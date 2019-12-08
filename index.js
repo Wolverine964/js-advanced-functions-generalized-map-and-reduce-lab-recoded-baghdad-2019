@@ -1,13 +1,13 @@
-function map (arr, action){
-    let sol=[]
-    for (let i=0; i < arr.length; i++){
-        sol.push(action(arr[i]))
+function map (arr1, action){
+    let ans=[]
+    for (let i=0; i < arr1.length; i++){
+        ans.push(action(arr1[i]))
     }
-    return sol
+    return ans
 }
 
-function reduce(arr, action, stratingPiont=0){
-    let sol= (!!stratingPiont) ? stratingPiont : arr[0]
+function reduce(arr1, action, sp=0){
+    let sol= (!!sp) ? sp : arr[0]
     let i= (!!stratingPiont) ? 0 : 1
     for (; i < arr.length; i++){
         sol = action(sol, arr[i])
